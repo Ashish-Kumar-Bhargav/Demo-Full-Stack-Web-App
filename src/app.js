@@ -21,7 +21,7 @@ hbs.registerPartials(partialpath);
 // routing 
 // app.get(path, callback)
 app.get("/",(req,res)=>{
-    res.render("C:\\Users\\vivek singh\\Desktop\\Practice-1\\template\\index.hbs");
+    res.render("C:\\Users\\jaiam\\OneDrive\\Desktop\\Calculator\\New folder\\Full-Stack-Web-App\\template\\index.hbs");
 })
 
 // app.get("/contact",(req,res)=>{
@@ -32,7 +32,7 @@ app.post("/contact", async(req, res) => {
         // res.send(req.body);
         const userData = new User(req.body);
         await userData.save();
-        res.status(201).render("C:\\Users\\vivek singh\\Desktop\\Practice-1\\template\\index.hbs");
+        res.status(201).render("C:\\Users\\jaiam\\OneDrive\\Desktop\\Calculator\\New folder\\Full-Stack-Web-App\\template\\index.hbs");
     } catch(error){
         res.status(500).send(error);
     }
